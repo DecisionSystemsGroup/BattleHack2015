@@ -55,8 +55,7 @@
           </div>
         </div><!-- /Top Donors -->
         <!-- Main Form -->
-        <div class="col-md-9">
-          <div class="visible-md-block">
+        <div class="col-md-9 visible-md-9 hidden-xs hidden-sm">
           <!-- Store Map -->
           <div class="store-map">
             <h1>Participating Stores</h1>
@@ -69,7 +68,6 @@
               style="border:0">
             </iframe>
           </div><!-- /Store Map -->
-        </div>
         </div><!-- /Main Form -->
       </div><!-- /Content -->
       <!-- Footer -->
