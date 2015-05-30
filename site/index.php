@@ -19,9 +19,12 @@
           </div>
         </div>
       </div><!-- /Header -->
-
       <div class="row">
-        <!-- Login -->
+        <?php include 'inc/navigation.php'; ?>
+      </div>
+      <!-- Content -->
+      <div class="row">
+        <!-- Top Donors -->
         <div class="col-md-3">
           <div class="top-donors">
             <h1>Top Donors</h1>
@@ -34,45 +37,23 @@
                     <th>Nickname</th>
                     <th>Donated</th>
                   </tr>
+                  <?php
+                    for ($i=0; $i<10; $i++){
+                  ?>
                   <tr>
                     <td>1</td>
                     <td>Pandorian</td>
                     <td>N/A</td>
                   </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Pandorian</td>
-                    <td>N/A</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Pandorian</td>
-                    <td>N/A</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Pandorian</td>
-                    <td>N/A</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Pandorian</td>
-                    <td>N/A</td>
-                  </tr>
+                  <?php
+                    }
+                  ?>
                 </table>
               </div>
               </div>
             </div>
           </div>
-        </div><!-- /Login -->
-        <form>
-          First name or nickname:<br>
-          <input type="text" name="firstname">
-          <br>
-          Last name:<br>
-          <input type="text" name="lastnem">
-          <br>
-        </form>
+        </div><!-- /Top Donors -->
         <!-- Main Form -->
         <div class="col-md-9">
           <!-- Store Map -->
@@ -88,8 +69,12 @@
             </iframe>
           </div><!-- /Store Map -->
         </div><!-- /Main Form -->
-      </div>
-    </div>
+      </div><!-- /Content -->
+      <!-- Footer -->
+      <div class="footer">
+        <?php include "inc/footer.php"?>
+      </div><!-- /Footer -->
+    </div><!-- /Container -->
     <?php require_once 'inc/scripts.php'; ?>
   </body>
 </html>
