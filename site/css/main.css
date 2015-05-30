@@ -1,3 +1,8 @@
+.back{
+  background-repeat: repeat;
+  background-image: url("img/pat1.jpg");
+  background-size: auto;
+}
 .footer{
   margin-top:5px;
   padding-top:15px;
@@ -24,6 +29,11 @@
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
 }
+.navbar-brand span{
+  font-size: 35px;
+  color: #888;
+  margin-bottom:-10px;
+}
 .site-title{
   font-size: 15vmin;
   font-weight: bold;
@@ -32,7 +42,7 @@
   margin-top: -5vmin;
   font-size: 5vmin;
 }
-.store-map{
+.main-content{
   padding: 10px;
   width:100%;
   height:560px;
@@ -41,11 +51,11 @@
   color: rgb(160, 224, 180);
 }
 
-.store-map h1{
+.main-content h1{
   font-size: 7vmin;
   font-weight: bold;
 }
-.store-map h2{
+.main-content h2{
   font-size: 5.5vmin;
   font-weight: bold;
 }

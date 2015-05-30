@@ -13,6 +13,23 @@
     <div class="container">
       <!-- Content -->
       <div class="row">
+        <div class="text-center col-md-2 col-md-offset-1">
+          Test
+        </div>
+        <div class="text-center col-md-2">
+          Test
+        </div>
+        <div class="text-center col-md-2">
+          Test
+        </div>
+        <div class="text-center col-md-2">
+          Test
+        </div>
+        <div class="text-center col-md-2">
+          Test
+        </div>
+      </div>
+      <div class="row">
         <!-- Top Donors -->
         <div class="col-md-3">
           <div class="top-donors">
@@ -46,7 +63,7 @@
         <!-- Main Form -->
         <div class="col-md-9 visible-md-9 hidden-xs hidden-sm">
           <!-- Store Map -->
-          <div class="store-map">
+          <div class="main-content">
             <h1>Participating Stores</h1>
             <h2>See all the stores that support the project.</h2>
             <?php include 'inc/gmap.php'; ?>
