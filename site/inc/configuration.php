@@ -1,4 +1,4 @@
 <?php
-  $siteTitle = 'Battlehack';
+  $siteTitle = 'Food4Charity';
   $siteTagline = 'Tagline goes here';
 ?>

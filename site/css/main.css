@@ -4,7 +4,6 @@
   border-radius:3px;
   background-color: rgb(16, 16, 16);
   text-align: center;
-  color: rgb(16, 16, 16);
 }
 .footer a:link, a:visited{
   color: rgb(160, 224, 180);
@@ -13,6 +12,11 @@
 .footer a:hover{
   text-decoration: none;
   color: rgb(0, 164, 51);
+}
+
+.navbar-brand{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
 }
 .site-title{
   font-size: 15vmin;
@@ -23,9 +27,12 @@
   font-size: 5vmin;
 }
 .store-map{
+  padding: 10px;
   width:100%;
-  height:500px;
   margin-bottom:130px;
+  background-color: rgb(16, 16, 16);
+  border-radius: 7px;
+  color: rgb(160, 224, 180);
 }
 
 .store-map h1{
@@ -37,6 +44,12 @@
   font-weight: bold;
 }
 
+.top-donors{
+  padding: 5px;
+  background-color: rgb(16, 16, 16);
+  border-radius: 7px;
+  color: rgb(160, 224, 180);
+}
 .top-donors h1{
   font-size: 6vmin;
   font-weight: bold;
@@ -52,4 +65,7 @@
 
 .top-donors table tr{
   font-size: 4vmin;
+}
+.top-donors table td:hover{
+  color:black;
 }

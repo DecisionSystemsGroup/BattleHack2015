@@ -9,22 +9,14 @@
   </head>
 
   <body>
+    <?php include 'inc/navigation.php'; ?>
     <div class="container">
-      <!-- Header -->
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <img src="img/site-logo.png" class="img-responsive"/>
-        </div>
-      </div><!-- /Header -->
-      <div class="row">
-        <?php include 'inc/navigation.php'; ?>
-      </div>
       <!-- Content -->
       <div class="row">
         <!-- Top Donors -->
         <div class="col-md-3">
           <div class="top-donors">
-            <h1>Top Donors</h1>
+            <h1 class="text-center">Top Donors</h1>
             <div class="row">
               <div class="col-md-12">
                 <div class="table-responsive">
@@ -38,7 +30,7 @@
                     for ($i=0; $i<10; $i++){
                   ?>
                   <tr>
-                    <td>1</td>
+                    <td><?php echo $i+1;  ?></td>
                     <td>Pandorian</td>
                     <td>N/A</td>
                   </tr>

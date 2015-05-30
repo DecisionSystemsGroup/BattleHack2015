@@ -7,3 +7,5 @@
 
 <link href="css/main.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
