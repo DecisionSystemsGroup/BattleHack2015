@@ -14,24 +14,24 @@
       <!-- Content -->
       <div class="header-stores">
       <div class="row">
-        <div class="text-center col-md-2 col-md-offset-1">
-          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+        <div class="text-center col-xs-2 col-xs-offset-1 ">
+          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
-        <div class="text-center col-md-2">
-          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+        <div class="text-center col-xs-2">
+          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
-        <div class="text-center col-md-2">
-          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+        <div class="text-center col-xs-2">
+          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
-        <div class="text-center col-md-2">
-          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+        <div class="text-center col-xs-2">
+          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
-        <div class="text-center col-md-2">
-          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+        <div class="text-center col-xs-2">
+          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
       </div>
@@ -44,7 +44,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="table-responsive">
-                <table class="table-hover" width="100%">
+                <table class="table-striped" width="100%">
                   <tr>
                     <th>#</th>
                     <th>Nickname</th>
