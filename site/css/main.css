@@ -15,10 +15,13 @@
   color: rgb(0, 164, 51);
 }
 
-.header-stores{
-
-  color: color: rgb(160, 224, 180);
-
+.header-stores {
+  background-color: rgb(16, 16, 16);
+  padding:15px;
+  margin-bottom: 15px;
+}
+.header-stores span title{
+    color: white;
 }
 #map-canvas{
   height:500px;
