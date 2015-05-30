@@ -30,10 +30,10 @@
       }
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-      var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(track['gps']['lat'], track['gps']['long']),
-          map: null,
-      });
+      // var marker = new google.maps.Marker({
+          // position: new google.maps.LatLng(track['gps']['lat'], track['gps']['long']),
+          // map: null,
+      // });
     }
 
 
@@ -42,13 +42,27 @@ google.maps.event.addListener(map, 'click', function(event) {
 placeMarker(event.latLng);
 });
 
-function placeMarker(location) {
-var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(track['gps']['lat'], track['gps']['long']),
-    map: map
-});
-}
 
+<?php
+
+    $db = new mysqli("localhost","root","oreal","food");
+	$stmt = $db->prepare("SELECT `name`, `lat`, `long` FROM `store` WHERE 1");
+	// $stmt -> bind_param('s', $sender);
+	$stmt -> execute();
+	$stmt -> bind_result($name, $lat, $long);//print_r($stmt);
+	while( $stmt -> fetch()){
+?>
+
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng("<?php echo $lat.','.$long; ?>"),
+			map: map,
+			title: "<?php echo $name; ?>"
+		});
+<?php
+	}
+	$stmt -> close();	
+	mysqli_close( $db );
+?>
     </script>
   </head>
   <body>
