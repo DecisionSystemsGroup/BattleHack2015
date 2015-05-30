@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a data-toggle="modal" data-target="#About">About<span class="sr-only">(current)</span></a></li>
-        <li><a href="about.php">Link</a></li>
+        <li><a data-toggle="modal" data-target="#Partners">Partners<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -30,7 +30,6 @@
         </li>
       </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a data-toggle="modal" data-target="#Donate"><img  src="img/BUTTON-DONATE-NOW.jpeg" width="auto" height="30"></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
