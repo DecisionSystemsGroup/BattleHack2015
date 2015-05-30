@@ -25,7 +25,14 @@
         <div class="col-md-3">
           Login
         </div><!-- /Login -->
-
+        <form>
+          First name or nickname:<br>
+          <input type="text" name="firstname">
+          <br>
+          Last name:<br>
+          <input type="text" name="lastnem">
+          <br>
+        </form>
         <!-- Main Form -->
         <div class="col-md-9">
           <!-- Store Map -->
