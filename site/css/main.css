@@ -1,0 +1,15 @@
+.site-title{
+  font-size: 15vmin;
+  font-weight: bold;
+}
+.site-tagline{
+  font-size: 5vmin;
+}
+.store-map{
+  width:100%;
+  height:500px;
+}
+
+.store-map h1{
+  font-size: 7vmin;
+}
