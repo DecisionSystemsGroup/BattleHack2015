@@ -12,4 +12,22 @@
 
 .store-map h1{
   font-size: 7vmin;
+  font-weight: bold;
+}
+
+.top-donors h1{
+  font-size: 6vmin;
+  font-weight: bold;
+}
+
+.top-donors table{
+  text-align:center;
+}
+.top-donors table th{
+  text-align:center;
+  font-size:3vmin;
+}
+
+.top-donors table tr{
+  font-size: 2.5vmin;
 }
