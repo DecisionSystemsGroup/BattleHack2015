@@ -12,22 +12,29 @@
     <?php include 'inc/navigation.php'; ?>
     <div class="container">
       <!-- Content -->
+      <div class="header-stores">
       <div class="row">
         <div class="text-center col-md-2 col-md-offset-1">
-          Test
+          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
         <div class="text-center col-md-2">
-          Test
+          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
         <div class="text-center col-md-2">
-          Test
+          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
         <div class="text-center col-md-2">
-          Test
+          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
         <div class="text-center col-md-2">
-          Test
+          <img src="img/MITSOS.jpg" class="img-rounded img-responsive"/>
+          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
+      </div>
       </div>
       <div class="row">
         <!-- Top Donors -->

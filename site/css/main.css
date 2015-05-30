@@ -20,8 +20,9 @@
   padding:15px;
   margin-bottom: 15px;
 }
-.header-stores span title{
+.store-title{
     color: white;
+    font-weight:bold;
 }
 #map-canvas{
   height:500px;
@@ -55,7 +56,7 @@
 }
 
 .main-content h1{
-  font-size: 7vmin;
+  font-size: 30px;
   font-weight: bold;
 }
 .main-content h2{
@@ -64,13 +65,13 @@
 }
 
 .top-donors{
-  padding: 5px;
+  padding: 15px;
   background-color: rgb(16, 16, 16);
   border-radius: 7px;
   color: rgb(160, 224, 180);
 }
 .top-donors h1{
-  font-size: 6vmin;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -79,11 +80,11 @@
 }
 .top-donors table th{
   text-align:center;
-  font-size:3.5vmin;
+  font-size:23px;
 }
 
 .top-donors table tr{
-  font-size: 4vmin;
+  font-size: 20px;
 }
 .top-donors table td:hover{
   color:black;
