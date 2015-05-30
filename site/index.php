@@ -9,9 +9,13 @@
   </head>
 
   <body>
-    <?php include 'inc/navigation.php'; ?>
+    <?php #include 'inc/navigation.php'; ?>
     <div class="container">
       <!-- Content -->
+      <div class="site-title">
+        <h1>Food<span>4</span>Charity</h1>
+        <h2><i>Pay the meal for the people that need it most.</i></h2>
+      </div>
       <div class="header-stores">
       <div class="row">
         <div class="text-center col-xs-2 col-xs-offset-1 ">
@@ -73,7 +77,7 @@
           <div class="main-content">
             <h1>Participating Stores</h1>
             <h2>See all the stores that support the project.</h2>
-            <?php include 'inc/gmap.php'; ?>
+            <?php #include 'inc/gmap.php'; ?>
           </div><!-- /Store Map -->
         </div><!-- /Main Form -->
       </div><!-- /Content -->
