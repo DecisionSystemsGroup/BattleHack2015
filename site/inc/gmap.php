@@ -31,13 +31,23 @@
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
       var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Hello World!'
+          position: new google.maps.LatLng(track['gps']['lat'], track['gps']['long']),
+          map: null,
       });
     }
 
+
 google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addListener(map, 'click', function(event) {
+placeMarker(event.latLng);
+});
+
+function placeMarker(location) {
+var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(track['gps']['lat'], track['gps']['long']),
+    map: map
+});
+}
 
     </script>
   </head>
