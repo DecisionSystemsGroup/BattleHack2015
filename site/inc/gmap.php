@@ -20,50 +20,37 @@
         padding: 0px
       }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.0&sensor=false"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script>
-    function initialize() {
-      var myLatlng = new google.maps.LatLng(37.98439254177114, 23.72922420501709);
-      var mapOptions = {
-        zoom: 12,
-        center: myLatlng
-      }
-      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-      // var marker = new google.maps.Marker({
-          // position: new google.maps.LatLng(track['gps']['lat'], track['gps']['long']),
-          // map: null,
-      // });
-    }
-
-
-google.maps.event.addDomListener(window, 'load', initialize);
-google.maps.event.addListener(map, 'click', function(event) {
-placeMarker(event.latLng);
-});
-
-
-<?php
-
-    $db = new mysqli("localhost","root","oreal","food");
-	$stmt = $db->prepare("SELECT `name`, `lat`, `long` FROM `store` WHERE 1");
-	// $stmt -> bind_param('s', $sender);
-	$stmt -> execute();
-	$stmt -> bind_result($name, $lat, $long);//print_r($stmt);
-	while( $stmt -> fetch()){
-?>
-
-		var marker = new google.maps.Marker({
-			position: new google.maps.LatLng("<?php echo $lat.','.$long; ?>"),
-			map: map,
-			title: "<?php echo $name; ?>"
+	var map;
+	var markers = [];
+	function initialize() {
+		var mapOptions = {
+		  center: new google.maps.LatLng(37.9704897, 23.7255971),
+		  zoom: 11
+		};
+		map = new google.maps.Map(document.getElementById("map-canvas"),
+			mapOptions);
+		loadMarkers();
+	};
+	google.maps.event.addDomListener(window, 'load', initialize);
+	function loadMarkers(){
+		var query = "./mapInfo.php";
+		$.get( query, function( returned_data ) {
+			var response = JSON.parse(returned_data);console.log(response);
+			for( var i=0; i<response.length; i++){
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(response[i]['lat'], response[i]['long']),
+					map: map,
+					title: response[i]['name']
+				});
+			}
 		});
-<?php
 	}
-	$stmt -> close();	
-	mysqli_close( $db );
-?>
-    </script>
+</script>
+
+    
   </head>
   <body>
     <div id="map-canvas"></div>
