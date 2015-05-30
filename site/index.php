@@ -12,11 +12,8 @@
     <div class="container">
       <!-- Header -->
       <div class="row">
-        <div class="col-md-12">
-          <div class="text-center">
-            <div class="site-title"><?php echo $siteTitle; ?></div>
-            <div class="site-tagline"><?php echo $siteTagline; ?></div>
-          </div>
+        <div class="col-md-6 col-md-offset-3">
+          <img src="img/site-logo.png" class="img-responsive"/>
         </div>
       </div><!-- /Header -->
       <div class="row">
