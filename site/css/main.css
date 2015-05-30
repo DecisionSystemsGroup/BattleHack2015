@@ -1,3 +1,19 @@
+.footer{
+  padding-top:10px;
+  padding-bottom:5px;
+  border-radius:3px;
+  background-color: rgb(16, 16, 16);
+  text-align: center;
+  color: rgb(16, 16, 16);
+}
+.footer a:link, a:visited{
+  color: rgb(160, 224, 180);
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color: rgb(0, 164, 51);
+}
 .site-title{
   font-size: 15vmin;
   font-weight: bold;

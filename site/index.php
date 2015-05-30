@@ -56,6 +56,7 @@
         </div><!-- /Top Donors -->
         <!-- Main Form -->
         <div class="col-md-9">
+          <div class="visible-md-block">
           <!-- Store Map -->
           <div class="store-map">
             <h1>Participating Stores</h1>
@@ -68,11 +69,12 @@
               style="border:0">
             </iframe>
           </div><!-- /Store Map -->
+        </div>
         </div><!-- /Main Form -->
       </div><!-- /Content -->
       <!-- Footer -->
-      <div class="footer">
-        <?php include "inc/footer.php"?>
+
+        <?php include 'inc/footer.php' ?>
       </div><!-- /Footer -->
     </div><!-- /Container -->
     <?php require_once 'inc/scripts.php'; ?>
