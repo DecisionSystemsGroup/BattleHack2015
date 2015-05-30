@@ -15,7 +15,7 @@
     <title>Simple markers</title>
     <style>
       html, body, #map-canvas {
-        height: 100%;
+        height: 400px;
         margin: 0px;
         padding: 0px
       }
