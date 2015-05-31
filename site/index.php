@@ -3,8 +3,8 @@
   require_once 'inc/configuration.php';
 ?>
 <!DOCTYPE html>
-<html lang = "en">
   <head>
+  <meta charset="utf-8">
     <?php require_once 'inc/head.php'; ?>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.0&sensor=false"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -31,15 +31,36 @@
 						map: map,
 						title: response[i]['name']
 					});
+					/*<div class="text-center col-xs-2 col-xs-offset-1 ">
+					  <a href="#" onclick="storeEntered()">
+						<img src="img/MITSOS.png" class="img-rounded img-responsive"/>
+						<span class="store-title">Γυράδικο "Ο Μήτσος"</span>
+					  </a>
+					</div>*/
+					$('.stores-container').append("<div class=\"text-center col-xs-2 store-item\"><img src=\"./img/"+response[i]['filename']+"\" class=\"img-rounded img-responsive\"><span class=\"store-title\">"+response[i]['name']+"</span></div>");
+					$('.stores-container').first('.store-item').addClass('col-xs-offset-1');
 				}
+				$('.store-item').click(function(){
+					var primCont = $("#primary").is(":visible");	//toggle with the right order
+					$(primCont?"#primary":"#secondary").fadeToggle(500, function(){
+						$(primCont?"#secondary":"#primary").fadeToggle(400);
+					});
+				});
 			});
 		}
-	</script>
 
+	</script>
+    <style>
+      html, body, #map-canvas {
+        height: 400px;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
   </head>
 
   <body>
-    <?php #include 'inc/navigation.php'; ?>
+    
     <div class="container">
       <!-- Content -->
       <div class="site-title">
@@ -47,37 +68,16 @@
         <h2><i>Pay the meal for the people that need it most.</i></h2>
       </div>
       <div class="header-stores">
-      <div class="row">
-        <h4 class="text-center">Choose from:</h4>
-        <div class="text-center col-xs-2 col-xs-offset-1 ">
-          <a href="#" onclick="storeEntered()">
-            <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
-            <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
-          </a>
-        </div>
-        <div class="text-center col-xs-2">
-          <img src="img/Los_Pollos.png" class="img-circle img-responsive"/>
-          <span class="store-title">Los Polls Hermanos</span>
-        </div>
-        <div class="text-center col-xs-2">
-          <img src="img/murder-king.jpg" class="img-circle img-responsive"/>
-          <span class="store-title">Murder King</span>
-        </div>
-        <div class="text-center col-xs-2">
-          <img src="img/McDonalds-logo.jpg" class="img-circle img-responsive"/>
-          <span class="store-title">McDonalds</span>
-        </div>
-        <div class="text-center col-xs-2">
-          <img src="img/jabba-hut.jpg" class="img-circle img-responsive"/>
-          <span class="store-title">Jabba Hut</span>
-        </div>
-      </div>
+		  <div class="row stores-container">
+			<h4 class="text-center">Choose from:</h4>
+		  </div>
       </div>
       <div class="row" id="primary">
+	  
         <!-- Top Donors -->
         <div class="col-md-3">
           <div class="top-donors">
-            <h1 class="text-center">Top Donors</h1>
+            <h1 class="text-center">Popular Meals</h1>
             <div class="row">
               <div class="col-md-12">
                 <div class="table-responsive">
@@ -114,6 +114,9 @@
           </div><!-- /Store Map -->
         </div><!-- /Main Form -->
       </div><!-- /Content -->
+	  <div class="row" id="secondary" style="display: none;">
+		<h1 class="text-center">Pick a meal</h1>
+	  </div>
       <!-- Footer -->
 
         <?php include 'inc/footer.php' ?>
