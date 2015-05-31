@@ -16,11 +16,21 @@
         <h1>Food<span>4</span>Charity</h1>
         <h2><i>Pay the meal for the people that need it most.</i></h2>
       </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <h1>Say no to hunger!</h1>
+          <h2>Provide a meal to someone that cannot pay for it.</h2>
+          <h3> Just choose your desired meal and quantity, pay with your paypal or credit card and make someone happy.</h3>
+        </div>
+      </div>
       <div class="header-stores">
       <div class="row">
+        <h4 class="text-center">Choose from:</h4>
         <div class="text-center col-xs-2 col-xs-offset-1 ">
-          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
-          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
+          <a href="#" onclick="storeEntered()">
+            <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
+            <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
+          </a>
         </div>
         <div class="text-center col-xs-2">
           <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
@@ -40,7 +50,7 @@
         </div>
       </div>
       </div>
-      <div class="row">
+      <div class="row" id="primary">
         <!-- Top Donors -->
         <div class="col-md-3">
           <div class="top-donors">
