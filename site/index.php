@@ -77,7 +77,7 @@
           <div class="main-content">
             <h1>Participating Stores</h1>
             <h2>See all the stores that support the project.</h2>
-            <?php #include 'inc/gmap.php'; ?>
+            <?php include 'inc/gmap.php'; ?>
           </div><!-- /Store Map -->
         </div><!-- /Main Form -->
       </div><!-- /Content -->
