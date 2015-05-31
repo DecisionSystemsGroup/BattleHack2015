@@ -6,6 +6,36 @@
 <html lang = "en">
   <head>
     <?php require_once 'inc/head.php'; ?>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.0&sensor=false"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		var map;
+		var markers = [];
+		function initialize() {
+			var mapOptions = {
+			  center: new google.maps.LatLng(37.9704897, 23.7255971),
+			  zoom: 11
+			};
+			map = new google.maps.Map(document.getElementById("map-canvas"),
+				mapOptions);
+			loadMarkers();
+		};
+		google.maps.event.addDomListener(window, 'load', initialize);
+		function loadMarkers(){
+			var query = "./inc/mapInfo.php";
+			$.get( query, function( returned_data ) {
+				var response = JSON.parse(returned_data);
+				for( var i=0; i<response.length; i++){
+					var marker = new google.maps.Marker({
+						position: new google.maps.LatLng(response[i]['lat'], response[i]['long']),
+						map: map,
+						title: response[i]['name']
+					});
+				}
+			});
+		}
+	</script>
+
   </head>
 
   <body>
@@ -87,7 +117,7 @@
           <div class="main-content">
             <h1>Participating Stores</h1>
             <h2>See all the stores that support the project.</h2>
-            <?php include 'inc/gmap.php'; ?>
+            <div id="map-canvas"></div>
           </div><!-- /Store Map -->
         </div><!-- /Main Form -->
       </div><!-- /Content -->
