@@ -56,19 +56,19 @@
           </a>
         </div>
         <div class="text-center col-xs-2">
-          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
+          <img src="img/everest_syros.jpg" class="img-circle img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
         <div class="text-center col-xs-2">
-          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
+          <img src="img/l.php.jpg" class="img-circle img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
         <div class="text-center col-xs-2">
-          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
+          <img src="img/McDonalds-logo.jpg" class="img-circle img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
         <div class="text-center col-xs-2">
-          <img src="img/MITSOS.png" class="img-rounded img-responsive"/>
+          <img src="img/asd.jpg" class="img-circle img-responsive"/>
           <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
         </div>
       </div>
