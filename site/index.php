@@ -57,19 +57,19 @@
         </div>
         <div class="text-center col-xs-2">
           <img src="img/everest_syros.jpg" class="img-circle img-responsive"/>
-          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
+          <span class="store-title">Everest</span>
         </div>
         <div class="text-center col-xs-2">
-          <img src="img/l.php.jpg" class="img-circle img-responsive"/>
-          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
+          <img src="img/murder-king.jpg" class="img-circle img-responsive"/>
+          <span class="store-title">Murder King</span>
         </div>
         <div class="text-center col-xs-2">
           <img src="img/McDonalds-logo.jpg" class="img-circle img-responsive"/>
-          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
+          <span class="store-title">McDonalds</span>
         </div>
         <div class="text-center col-xs-2">
-          <img src="img/asd.jpg" class="img-circle img-responsive"/>
-          <span class="store-title">Γυράδικο "Ο Μήτσος"</span>
+          <img src="img/jabba-hut.jpg" class="img-circle img-responsive"/>
+          <span class="store-title">Jabba Hut</span>
         </div>
       </div>
       </div>
