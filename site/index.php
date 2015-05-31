@@ -56,8 +56,8 @@
           </a>
         </div>
         <div class="text-center col-xs-2">
-          <img src="img/everest_syros.jpg" class="img-circle img-responsive"/>
-          <span class="store-title">Everest</span>
+          <img src="img/Los_Pollos.png" class="img-circle img-responsive"/>
+          <span class="store-title">Los Polls Hermanos</span>
         </div>
         <div class="text-center col-xs-2">
           <img src="img/murder-king.jpg" class="img-circle img-responsive"/>
