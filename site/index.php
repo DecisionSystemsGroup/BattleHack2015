@@ -1,6 +1,11 @@
 <?php
   session_start();
   require_once 'inc/configuration.php';
+  require_once './braintree-php-3.0.0/lib/Braintree.php';
+	Braintree_Configuration::environment('sandbox');
+	Braintree_Configuration::merchantId('3qc35974vkn6xfx6');
+	Braintree_Configuration::publicKey('n4gwbmfwv9qhxnc6');
+	Braintree_Configuration::privateKey('6391cd594debb98b91fb362b49627089');
 ?>
 <!DOCTYPE html>
   <head>
@@ -116,16 +121,18 @@
       </div><!-- /Content -->
 	  <div class="row" id="secondary" style="display: none;">
 		<h1 class="text-center">Pick a meal</h1>
-    <form action="">
-    <div class="col-md-4 text-center">
-      <img src="img/pat1.jpg" class="img-rounded img responsive" />
-      <h1>Big Burger 6$</h1>
-
-          <div class="col-xs-4 col-xs-offset-4">
-            <input  nametype="number" min="0" max="10" step="1" value="1">
-          </div>
-      </div>
-    </div>
+		<form id="checkout" method="post" action="checkout.php">
+			<div class="col-md-4 text-center">
+			  <img src="img/pat1.jpg" class="img-rounded img responsive" />
+			  <h1>Big Burger 6$</h1>
+			  <div class="row">
+				  <div class="col-xs-4 col-xs-offset-4">
+					<input type="number" min="0" max="10" step="1" value="0">
+				  </div>
+			  </div>
+			</div>
+			<div class="col-sm-6 col-sm-offset-3" id="payment-form"></div>
+		</form>
 	  </div>
       <!-- Footer -->
 
@@ -133,5 +140,15 @@
       </div><!-- /Footer -->
     </div><!-- /Container -->
     <?php require_once 'inc/scripts.php'; ?>
+	
+	<script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+	<script>
+	
+		var clientToken = "<?php echo($clientToken = Braintree_ClientToken::generate(array())); ?>";
+		braintree.setup(clientToken, "dropin", {
+		  container: "payment-form"
+		});
+	
+	</script>
   </body>
 </html>
