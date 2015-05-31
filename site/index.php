@@ -60,7 +60,7 @@
   </head>
 
   <body>
-    
+
     <div class="container">
       <!-- Content -->
       <div class="site-title">
@@ -73,7 +73,7 @@
 		  </div>
       </div>
       <div class="row" id="primary">
-	  
+
         <!-- Top Donors -->
         <div class="col-md-3">
           <div class="top-donors">
@@ -116,6 +116,15 @@
       </div><!-- /Content -->
 	  <div class="row" id="secondary" style="display: none;">
 		<h1 class="text-center">Pick a meal</h1>
+    <div class="col-md-4 text-center">
+      <img src="img/pat1.jpg" class="img-rounded img responsive" />
+      <h1>Big Burger 6$</h1>
+      <div class="row"><div class="col-xs-1 col-xs-offset-3"><input type="checkbox"></div>
+          <div class="col-xs-4">
+            <input   type="number" min="1" max="10" step="1" value="1">
+          </div>
+      </div>
+    </div>
 	  </div>
       <!-- Footer -->
 
