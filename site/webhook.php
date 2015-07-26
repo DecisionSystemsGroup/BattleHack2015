@@ -1,8 +1,6 @@
 <?php
-	$db = new mysqli("localhost","root","oreal","food");
-	if( is_array($db) ){
-		return $db;
-	}
+    require_once 'inc/dbCon.php';
+	$db = dbConnect();
 	// $d = serialize($_POST);
 	// $d = $_FILES['attachment1']['tmp_name'];
 	/*$stmt = $db->prepare("INSERT INTO `mailinfo`(`data`) VALUES (?)");
@@ -22,7 +20,7 @@
 		$mealPrice = $d[1]+0;
 		$extension = end((explode(".", $_FILES["attachment1"]["name"])));
 		$filename = uniqid().'.'.$extension;
-		if( $_POST['subject']==='add' && $_POST['attachments']>0 && count($d)==2 && $_FILES['attachment1']['size']<2097152){
+		if( $_POST['subject']=='add' && $_POST['attachments']>0 && count($d)==2 && $_FILES['attachment1']['size']<8194304){
 			
 			$stmt = $db->prepare("INSERT INTO `meals`(`store-id`, `price`, `name`, `filename`) VALUES (?, ?, ? ,?)");
 			$stmt -> bind_param('idss', $store_id, $mealPrice, $mealName, $filename);

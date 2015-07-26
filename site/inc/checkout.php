@@ -1,6 +1,5 @@
 <?php
 	require_once '../braintree-php-3.0.0/lib/Braintree.php';
-	include_once 'inc/head.php';
 	Braintree_Configuration::environment('sandbox');
 	Braintree_Configuration::merchantId('3qc35974vkn6xfx6');
 	Braintree_Configuration::publicKey('n4gwbmfwv9qhxnc6');
@@ -44,6 +43,19 @@
 	  'paymentMethodNonce' => $nonce
 	));
 	// print_r( $result );
-	echo $result->success?('<h1 class="text-center">Payment Successful, you were charged '.$sum.'$.</h1>'):'nop';
+	
 	//print_r($_POST);
 ?>
+<html>
+<head>
+<link href="../css/main.css" rel="stylesheet">
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<body>
+ <div class="site-title">
+	<a href="../" class="text-center">
+		<h1>Food<span>4</span>Charity</h1>
+		<h2><i>Pay the meal for the people that need it most.</i></h2>
+	</a>
+  </div>
+  <?php echo $result->success?('<h1 class="text-center">Payment Successful, you were charged '.$sum.'$.</h1>'):'Something went wrong.'; ?>
